@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Emaan Ali | Business Development</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #080b12;
+    color: #f5f7fa;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(8,11,18,.88);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #6c63ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #aab0bd;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* HERO */
+
+.hero {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 160px 30px 100px;
+
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: #8b85ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: #6c63ff;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 30px 0;
+    color: #9ba3b2;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+    display: inline-block;
+}
+
+.primary {
+    background: #6c63ff;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(108,99,255,.35);
+}
+
+.secondary {
+    border: 1px solid #303642;
+}
+
+.secondary:hover {
+    border-color: #6c63ff;
+}
+
+/* HERO CARD */
+
+.hero-card {
+    padding: 40px;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(108,99,255,.16),
+        rgba(255,255,255,.03)
+    );
+
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.hero-card small {
+    color: #8b85ff;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.hero-card h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 20px 0 35px;
+}
+
+.stat {
+    border-top: 1px solid #303642;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat strong {
+    color: #8b85ff;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 110px 30px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.dark {
+    background: #0d111a;
+}
+
+.section-label {
+    color: #8b85ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: clamp(32px,5vw,52px);
+    line-height: 1.15;
+    margin-bottom: 55px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.about-text p {
+    color: #9ba3b2;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    padding: 25px;
+    margin-bottom: 15px;
+
+    border: 1px solid #252b36;
+    border-radius: 12px;
+    background: #0c1018;
+}
+
+.highlight span {
+    color: #6c63ff;
+    font-size: 12px;
+}
+
+.highlight h3 {
+    margin: 7px 0;
+}
+
+.highlight p {
+    color: #8992a2;
+    font-size: 14px;
+}
+
+/* SKILLS */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.skill {
+    padding: 30px;
+
+    background: #0a0e15;
+    border: 1px solid #252b36;
+    border-radius: 14px;
+
+    transition: .3s;
+}
+
+.skill:hover {
+    transform: translateY(-7px);
+    border-color: #6c63ff;
+}
+
+.skill-number {
+    color: #6c63ff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+}
+
+.skill p {
+    color: #8992a2;
+    font-size: 14px;
+}
+
+/* TOOLS */
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tool {
+    padding: 12px 18px;
+    border: 1px solid #303642;
+    border-radius: 30px;
+    color: #b8bfcb;
+}
+
+/* EXPERIENCE */
+
+.timeline {
+    border-left: 1px solid #303642;
+}
+
+.job {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 70px;
+}
+
+.dot {
+    position: absolute;
+    left: -6px;
+    top: 8px;
+
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+    background: #6c63ff;
+    box-shadow: 0 0 20px rgba(108,99,255,.7);
+}
+
+.date {
+    color: #8b85ff;
+    font-size: 13px;
+}
+
+.job h3 {
+    font-size: 27px;
+    margin-top: 6px;
+}
+
+.job h4 {
+    color: #858e9d;
+    margin-bottom: 18px;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+.job li {
+    color: #9ba3b2;
+    margin-bottom: 9px;
+}
+
+/* CERTIFICATIONS */
+
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.cert {
+    padding: 30px;
+    border: 1px solid #272e39;
+    border-radius: 14px;
+}
+
+.cert-number {
+    color: #6c63ff;
+}
+
+.cert h3 {
+    margin: 15px 0 5px;
+}
+
+.cert p {
+    color: #8992a2;
+}
+
+/* EDUCATION */
+
+.education {
+    background: #6c63ff;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: clamp(36px,5vw,60px);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.contact p {
+    color: #8992a2;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #202631;
+    color: #697281;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 130px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+<nav>
+
+    <div class="logo">
+        Emaan<span>.</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div>
+
+        <div class="eyebrow">
+            BUSINESS DEVELOPMENT • SALES • CLIENT GROWTH
+        </div>
+
+        <h1>
+            I Build Relationships.
+            <span>I Drive Business Growth.</span>
+        </h1>
+
+        <p class="hero-text">
+            Business Development professional with 7 years of experience
+            across sales, lead generation, customer relationships,
+            appointment scheduling, CRM management and client success.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#experience" class="btn primary">
+                View Experience
+            </a>
+
+            <a href="#contact" class="btn secondary">
+                Let's Connect
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <small>CORE FOCUS</small>
+
+        <h2>
+            Business<br>
+            Development
+        </h2>
+
+        <div class="stat">
+            <strong>7+</strong>
+            <span>Years Experience</span>
+        </div>
+
+        <div class="stat">
+            <strong>CRM</strong>
+            <span>Sales Operations</span>
+        </div>
+
+        <div class="stat">
+            <strong>B2B</strong>
+            <span>Client Growth</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+    <div class="section-label">
+        ABOUT ME
+    </div>
+
+    <h2 class="section-title">
+        Business Development with a Customer-First Mindset.
+    </h2>
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <p>
+                I am a customer-focused professional with 7 years
+                of progressive experience across sales, appointment
+                scheduling, customer care and business development.
+            </p>
+
+            <p>
+                My experience combines business development,
+                CRM management, client relationship management,
+                customer onboarding, technical problem-solving
+                and team leadership.
+            </p>
+
+            <p>
+                I enjoy understanding client requirements,
+                identifying opportunities, building relationships
+                and helping businesses turn prospects into
+                long-term customers.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="highlight">
+                <span>01</span>
+                <h3>Lead Generation</h3>
+                <p>
+                    Finding and managing qualified business opportunities.
+                </p>
+            </div>
+
+            <div class="highlight">
+                <span>02</span>
+                <h3>Client Relationships</h3>
+                <p>
+                    Building strong relationships and supporting retention.
+                </p>
+            </div>
+
+            <div class="highlight">
+                <span>03</span>
+                <h3>Sales Pipeline</h3>
+                <p>
+                    Managing prospects from initial contact through closing.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="dark">
+
+<div class="container">
+
+    <div class="section-label">
+        WHAT I DO
+    </div>
+
+    <h2 class="section-title">
+        Core Skills
+    </h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            <div class="skill-number">01</div>
+            <h3>Business Development</h3>
+            <p>
+                Business development strategy, prospecting,
+                lead generation and client acquisition.
+            </p>
+        </div>
+
+        <div class="skill">
+            <div class="skill-number">02</div>
+            <h3>Sales Pipeline</h3>
+            <p>
+                Prospect management, pipeline tracking,
+                follow-ups and sales-cycle management.
+            </p>
+        </div>
+
+        <div class="skill">
+            <div class="skill-number">03</div>
+            <h3>CRM Management</h3>
+            <p>
+                Salesforce, HubSpot, Pipedrive and
+                CRM-based sales operations.
+            </p>
+        </div>
+
+        <div class="skill">
+            <div class="skill-number">04</div>
+            <h3>Client Management</h3>
+            <p>
+                Client relationships, customer success,
+                onboarding and retention.
+            </p>
+        </div>
+
+        <div class="skill">
+            <div class="skill-number">05</div>
+            <h3>Negotiation</h3>
+            <p>
+                Client communication, conflict resolution
+                and practical solutions.
+            </p>
+        </div>
+
+        <div class="skill">
+            <div class="skill-number">06</div>
+            <h3>Team Leadership</h3>
+            <p>
+                Team mentoring, cross-functional collaboration
+                and process improvement.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- TOOLS -->
+
+<section>
+
+<div class="container">
+
+    <div class="section-label">
+        TOOLS & TECHNOLOGY
+    </div>
+
+    <h2 class="section-title">
+        Tools I Work With
+    </h2>
+
+    <div class="tools">
+
+        <span class="tool">Salesforce</span>
+        <span class="tool">HubSpot</span>
+        <span class="tool">Pipedrive</span>
+        <span class="tool">Zendesk</span>
+        <span class="tool">ServiceNow</span>
+        <span class="tool">Excel</span>
+        <span class="tool">Google Data Studio</span>
+        <span class="tool">Slack</span>
+        <span class="tool">Microsoft Teams</span>
+        <span class="tool">Jira</span>
+        <span class="tool">Trello</span>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="dark">
+
+<div class="container">
+
+    <div class="section-label">
+        CAREER
+    </div>
+
+    <h2 class="section-title">
+        Professional Experience
+    </h2>
+
+
+    <div class="timeline">
+
+
+        <!-- ALPHABRIDGE -->
+
+        <div class="job">
+
+            <div class="dot"></div>
+
+            <span class="date">
+                04/2025 – Present
+            </span>
+
+            <h3>
+                Business Developer – Team Lead
+            </h3>
+
+            <h4>
+                Alpha bridge Consulting
+            </h4>
+
+            <ul>
+
+                <li>
+                    Coordinated with software engineers and product
+                    managers to design customized client solutions.
+                </li>
+
+                <li>
+                    Analyzed sales pipelines and prepared performance
+                    reports for leadership.
+                </li>
+
+                <li>
+                    Implemented CRM best practices for lead tracking,
+                    follow-ups and reporting.
+                </li>
+
+                <li>
+                    Oversaw the full sales cycle from prospecting
+                    through closing.
+                </li>
+
+                <li>
+                    Improved client onboarding through collaboration
+                    with technical support teams.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- ABACUS -->
+
+        <div class="job">
+
+            <div class="dot"></div>
+
+            <span class="date">
+                09/2021 – 04/2024
+            </span>
+
+            <h3>
+                Customer Care Specialist
+            </h3>
+
+            <h4>
+                Abacus
+            </h4>
+
+            <ul>
+
+                <li>
+                    Managed customer inquiries using Zendesk.
+                </li>
+
+                <li>
+                    Troubleshot customer issues and escalated
+                    complex cases to technical teams.
+                </li>
+
+                <li>
+                    Maintained high levels of customer satisfaction.
+                </li>
+
+                <li>
+                    Assisted with onboarding and mentoring
+                    new team members.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- INVENSIS -->
+
+        <div class="job">
+
+            <div class="dot"></div>
+
+            <span class="date">
+                02/2020 – 08/2021
+            </span>
+
+            <h3>
+                Customer Support & Appointment Scheduling Associate
+            </h3>
+
+            <h4>
+                Invensis
+            </h4>
+
+            <ul>
+
+                <li>
+                    Coordinated client appointments and schedules.
+                </li>
+
+                <li>
+                    Managed high volumes of appointment requests.
+                </li>
+
+                <li>
+                    Negotiated alternative schedules to resolve conflicts.
+                </li>
+
+                <li>
+                    Maintained accurate scheduling records.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Z LOGISTICS -->
+
+        <div class="job">
+
+            <div class="dot"></div>
+
+            <span class="date">
+                03/2018 – 11/2019
+            </span>
+
+            <h3>
+                Customer Solution Specialist
+            </h3>
+
+            <h4>
+                Z Logistics
+            </h4>
+
+            <ul>
+
+                <li>
+                    Engaged logistics clients and identified
+                    transportation requirements.
+                </li>
+
+                <li>
+                    Offered tailored shipping solutions.
+                </li>
+
+                <li>
+                    Consistently achieved or exceeded sales targets.
+                </li>
+
+                <li>
+                    Built long-term customer relationships.
+                </li>
+
+                <li>
+                    Documented client requirements and sales
+                    activities in CRM systems.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section>
+
+<div class="container">
+
+    <div class="section-label">
+        CERTIFICATIONS
+    </div>
+
+    <h2 class="section-title">
+        Professional Certifications
+    </h2>
+
+    <div class="certifications">
+
+        <div class="cert">
+            <span class="cert-number">01</span>
+            <h3>Certified Business Development Expert</h3>
+            <p>CBDE</p>
+        </div>
+
+        <div class="cert">
+            <span class="cert-number">02</span>
+            <h3>Microsoft Certified</h3>
+            <p>Azure Fundamentals</p>
+        </div>
+
+        <div class="cert">
+            <span class="cert-number">03</span>
+            <h3>Zendesk Support Administrator</h3>
+            <p>Zendesk</p>
+        </div>
+
+        <div class="cert">
+            <span class="cert-number">04</span>
+            <h3>Foundation Certification</h3>
+            <p>IT Service Management</p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section class="education">
+
+    <div class="container">
+
+        <div class="section-label">
+            EDUCATION
+        </div>
+
+        <h2>
+            Bachelor's Degree in IT Management
+        </h2>
+
+        <p>
+            Information Technology Management
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<div class="contact-box">
+
+    <div class="section-label">
+        LET'S CONNECT
+    </div>
+
+    <h2>
+        Let's Build Something Great Together.
+    </h2>
+
+    <p>
+        I'm open to Business Development, Sales
+        and Client Growth opportunities.
+    </p>
+
+    <div class="buttons">
+
+        <a
+            href="mailto:aman.ali7842@gmail.com"
+            class="btn primary">
+            Email Me
+        </a>
+
+        <a
+            href="https://www.linkedin.com/in/emaan-ali-8a2667385/"
+            target="_blank"
+            class="btn secondary">
+            LinkedIn
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+    © 2026 Emaan Ali • Business Development Professional
+
+</footer>
+
+
+</body>
+</html>
